@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Food</title>
+</head>
+
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<link href='https://fonts.googleapis.com/css?family=Italianno' rel='stylesheet'>
+<script src="/functions.js"></script>
+
+<body>
+
+<style>
+  body{ background-color: #A883D0; }
+</style>
+
+<!-- Header Content -->
+<div class="relative">
+  <img class="header-img" src="https://www.clipular.com/c/5799726294499328.png?k=527XGYPJNfWEUS8wQv5JinDJATQ" width=100%</img>
+  <h1 class="title"><a href="delivery_service.htm">Amherst Delivery Service</a></h1>
+  <button class="login" onclick="document.getElementById('id01').style.display='block'">Login</button>
+</div>
+
+<!-- Menu Content -->
+<ul>
+  <li>
+  <button hover="myFunction()"class="dropbtn2"><a href="about_us.html">About Us</a></button>
+  </li>
+  <li>
+  <div class="dropdown">
+    <button hover="shopFunction()"class="dropbtn"> Shop</button>
+      <div id="myDropdown" class="dropdown-content">
+        <a href="school_supplies.html">School Supplies</a>
+        <a href="toiletries.html">Toiletries</a>
+        <a href="medicine.html">Medicine</a>
+	<a href="food.html">Food</a>	
+        <a href="other.html">Other</a>
+      </div>
+  </div>
+  </li>
+</ul>
+
+<p class="slogan">For Amherst Students, by Amherst students</p>
+
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" 
+class="close" title="Close Modal">&times;</span>
+  <!-- Modal Content -->
+  <form class="modal-content animate" action="/action_page.php">
+
+    <div class="container">
+      <label><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <button type="submit">Login</button>
+      <input type="checkbox" checked="checked"> Remember me
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+</body>
+</html>
